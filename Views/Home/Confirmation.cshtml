@@ -1,0 +1,13 @@
+@model Movie
+
+@{
+    ViewData["Title"] = "Confirmation";
+}
+
+<h2>Movie Submitted Successfully!</h2>
+
+<p><strong>Title:</strong> @Model.Title</p>
+<p><strong>Release Year:</strong> @Model.ReleaseYear</p>
+<p><strong>Rating:</strong> @Model.Rating</p>
+
+<a asp-controller="Home" asp-action="Index">Go Back to List</a>
